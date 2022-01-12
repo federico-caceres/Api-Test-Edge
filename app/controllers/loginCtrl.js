@@ -1,5 +1,3 @@
-// const { response } = require('express')
-const bcryptjs = require('bcryptjs')
 const { generarJWT } = require('../helpers/generarJWT')
 
 const login = async(req, res) => {
@@ -33,7 +31,7 @@ const login = async(req, res) => {
     } catch (error) {
         console.log(error);
         return res.status(500).json({
-            msg: 'Algo salio mal, hable con el administrador'
+            msg: 'Ocurrio un error de lado del servidor, contacte con el administrador'
         })
     }
 

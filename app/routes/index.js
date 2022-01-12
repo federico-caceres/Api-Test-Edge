@@ -6,7 +6,7 @@ const { validarJWT } = require('../middlewares/validar-jwt')
 
 router.get('/', function(req, res) {
 
-    res.status(200).json({ message: 'Estás conectado a nuestra API v1' })
+    res.status(200).json({ message: 'Estás conectado a la API test Edge v1' })
 
 })
 
